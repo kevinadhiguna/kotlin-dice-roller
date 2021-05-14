@@ -38,5 +38,15 @@ class MainActivity : AppCompatActivity() {
 
         // Get a reference to the dice image
         val diceImage: ImageView = findViewById(R.id.dice_image)
+
+        // Choose a specific dice image based on the value of randomInteger
+        val drawableResource = when(randomInt) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
     }
 }
