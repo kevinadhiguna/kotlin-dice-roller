@@ -22,10 +22,13 @@ class MainActivity : AppCompatActivity() {
 
     // Add a click handler to display a toast
     private fun rollDice() {
-        Toast.makeText(this, "button clicked !",
-            Toast.LENGTH_SHORT).show()
+        // Toast.makeText(this, "button clicked !",
+        //    Toast.LENGTH_SHORT).show()
 
         // Get a reference to the TextView
         val resultText: TextView = findViewById(R.id.result_text)
+
+        // Change the "Hello World" text to "Dice Rolled!" on button click
+        resultText.text = "Dice Rolled!"
     }
 }
