@@ -18,13 +18,15 @@
         app:srcCompat="@drawable/empty_dice"
         tools:src="@drawable/dice_1" />
     <!--
-        The app:srcCompat attribute uses the Android X library to support
-        vector drawables in older versions of Android, back to API level 7.
+        - The app namespace in your XML layout file is for attributes that come
+          from either your custom code or from libraries, not from the core Android framework.
+        - The app:srcCompat attribute uses the Android X library to support
+          vector drawables in older versions of Android, back to API level 7.
      -->
     <!--
-        The 'tools' namespace is used when you want to define placeholder content
-        that is only used in the preview or the design editor in Android Studio.
-        Attributes using the 'tools' namespace are removed when you compile the app.
+        - The 'tools' namespace is used when you want to define placeholder content
+          that is only used in the preview or the design editor in Android Studio.
+        - Attributes using the 'tools' namespace are removed when you compile the app.
      -->
 
     <Button
