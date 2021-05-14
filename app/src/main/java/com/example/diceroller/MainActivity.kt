@@ -7,7 +7,11 @@ import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
     // Create a field to hold the ImageView
-    var diceImage: ImageView? = null
+    lateinit var diceImage: ImageView // <- The 'lateinit' keyword promises the Kotlin compiler that the variable will be initialized before the code calls any operations on it.
+
+    // Therefore we don't need to initialize the variable to null here,
+    // and we can treat it as a non-nullable variable when we use it.
+    // It is a best practice to use 'lateinit' with fields that hold views in just this way.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
