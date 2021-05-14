@@ -25,10 +25,16 @@ class MainActivity : AppCompatActivity() {
         // Toast.makeText(this, "button clicked !",
         //    Toast.LENGTH_SHORT).show()
 
+        // Get a random number between 1 and 6
+        val randomInt = (1..6).random()
+
         // Get a reference to the TextView
         val resultText: TextView = findViewById(R.id.result_text)
 
         // Change the "Hello World" text to "Dice Rolled!" on button click
-        resultText.text = "Dice Rolled!"
+        // resultText.text = "Dice Rolled!"
+
+        // Set the text property to the value of the random integer, as a string
+        resultText.text = randomInt.toString()
     }
 }
