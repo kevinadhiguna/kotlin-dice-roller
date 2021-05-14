@@ -3,8 +3,7 @@ package com.example.diceroller
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,12 +28,15 @@ class MainActivity : AppCompatActivity() {
         val randomInt = (1..6).random()
 
         // Get a reference to the TextView
-        val resultText: TextView = findViewById(R.id.result_text)
+        // val resultText: TextView = findViewById(R.id.result_text)
 
         // Change the "Hello World" text to "Dice Rolled!" on button click
         // resultText.text = "Dice Rolled!"
 
         // Set the text property to the value of the random integer, as a string
-        resultText.text = randomInt.toString()
+        // resultText.text = randomInt.toString()
+
+        // Get a reference to the dice image
+        val diceImage: ImageView = findViewById(R.id.dice_image)
     }
 }
