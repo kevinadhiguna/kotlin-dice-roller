@@ -15,8 +15,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/empty_dice"
+        app:srcCompat="@drawable/empty_dice"
         tools:src="@drawable/dice_1" />
+    <!--
+        The app:srcCompat attribute uses the Android X library to support
+        vector drawables in older versions of Android, back to API level 7.
+     -->
     <!--
         The 'tools' namespace is used when you want to define placeholder content
         that is only used in the preview or the design editor in Android Studio.
