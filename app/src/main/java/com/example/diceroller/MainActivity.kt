@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
 
         // Get a reference to the 'roll_button' button
         val rollButton: Button = findViewById(R.id.roll_button)
+
+        // Call rollDice function to set onClickListener
+        rollButton.setOnClickListener {
+            rollDice()
+        }
     }
 
     // Add a click handler to display a toast
