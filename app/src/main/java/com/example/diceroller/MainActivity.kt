@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
+    // Create a field to hold the ImageView
+    var diceImage: ImageView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
