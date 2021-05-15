@@ -12,4 +12,5 @@ A dice roller app powered by Kotlin. This is a part of [Google Codelabs](https:/
 </div>
 
 <br/>
+
 [![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/kotlin-dice-roller)](https://github.com/kevinadhiguna)
